@@ -1,0 +1,3 @@
+/Users/liziyuan/Desktop/Baruch 2023Fall/MTH9815 Software Engineering/MTH9815-Trading-System-master/tradingsystem/cmake-build-debug/CMakeFiles/tradingsystem.dir
+/Users/liziyuan/Desktop/Baruch 2023Fall/MTH9815 Software Engineering/MTH9815-Trading-System-master/tradingsystem/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/liziyuan/Desktop/Baruch 2023Fall/MTH9815 Software Engineering/MTH9815-Trading-System-master/tradingsystem/cmake-build-debug/CMakeFiles/rebuild_cache.dir
