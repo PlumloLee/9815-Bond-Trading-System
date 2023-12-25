@@ -12,6 +12,18 @@ The project is built around a core framework defined in `soa.hpp`, introducing t
 - **ServiceListener**: Listens to events on a service, such as data addition, updates, or removal.
 - **Connector**: Bridges external data sources (files, sockets, etc.) to the services, using `OnMessage()` for data flow and `Publish()` for sending data back to external sources.
 
+## Data Flow
+
+Certain services will interact with external data through files and socket communication:
+PricingService     --> AlgoStreamingService  --> StreamingService --> HistoricalStreamingService
+                   --> GUIService
+
+MarketDataService  --> AlgoExecutionService  --> ExecutionService --> TradeBookingService        --> HistoricalExecutionService
+
+TradeBookService   --> PositionService       --> RiskService -->  HistoricalRiskService
+                                             --> HistoricalPositionService
+
+InquiryService     --> HistoricalInquiryService
 ## Bond Specific Classes
 
 ### `pricingservice.hpp`
@@ -124,11 +136,6 @@ The project is built around a core framework defined in `soa.hpp`, introducing t
 
 
 
-## Data Flow
-
-Certain services will interact with external data through files and socket communication:
-
-![image-20231224230405273](/Users/liziyuan/Library/Application Support/typora-user-images/image-20231224230405273.png)
 
 ## File Format and Notation
 
