@@ -15,15 +15,8 @@ The project is built around a core framework defined in `soa.hpp`, introducing t
 ## Data Flow
 
 Certain services will interact with external data through files and socket communication:
-PricingService     --> AlgoStreamingService  --> StreamingService --> HistoricalStreamingService
-                   --> GUIService
+<img width="977" alt="image" src="https://github.com/PlumloLee/9815-Bond-Trading-System/assets/73246048/30719176-76ac-4eb9-8769-8a31d9e7682e">
 
-MarketDataService  --> AlgoExecutionService  --> ExecutionService --> TradeBookingService        --> HistoricalExecutionService
-
-TradeBookService   --> PositionService       --> RiskService -->  HistoricalRiskService
-                                             --> HistoricalPositionService
-
-InquiryService     --> HistoricalInquiryService
 ## Bond Specific Classes
 
 ### `pricingservice.hpp`
