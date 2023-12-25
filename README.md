@@ -2,11 +2,11 @@
 
 ## Project Overview
 
-This project involves the development of a sophisticated bond trading system for US Treasuries. It includes an extensive set of services and components to handle various aspects of bond trading, such as trade booking, pricing, market data, risk management, and more. The system is designed to handle seven types of US Treasury securities: 2Y, 3Y, 5Y, 7Y, 10Y, 20Y, and 30Y.
+This project involves the development of a bond trading system for US Treasuries. It includes a set of services and components to handle various aspects of bond trading, such as trade booking, pricing, market data, risk management. The system is designed to handle seven types of US Treasury securities: 2Y, 3Y, 5Y, 7Y, 10Y, 20Y, and 30Y.
 
 ## Key Components
 
-The project is built around a core framework defined in `soa.hpp`, introducing the concepts of `Service`, `ServiceListener`, and `Connector`:
+The project is built in a core framework defined in `soa.hpp`, introducing the base class of `Service`, `ServiceListener`, and `Connector`:
 
 - **Service**: A central component that manages specific types of data (e.g., pricing, trade booking).
 - **ServiceListener**: Listens to events on a service, such as data addition, updates, or removal.
